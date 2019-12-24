@@ -29,6 +29,8 @@ let popEvent = [
                 moral++
                 $('.status').removeClass("statusUp")
             }
+            checkEnd()
+            console.log(moral,wealth,reputation)
         })
     },
     //2
@@ -58,6 +60,8 @@ let popEvent = [
                 moral--
                 $('.status').removeClass("statusUp")
             }
+            checkEnd()
+            console.log(moral,wealth,reputation)
         })
     },
     //3
@@ -87,6 +91,8 @@ let popEvent = [
                 reputation++
                 $('.status').removeClass("statusUp")
             }
+            checkEnd()
+            console.log(moral,wealth,reputation)
         })
     },
     //4
@@ -116,6 +122,8 @@ let popEvent = [
                 reputation++
                 $('.status').removeClass("statusUp")
             }
+            checkEnd()
+            console.log(moral,wealth,reputation)
         })
     },
     //5
@@ -144,6 +152,8 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
     //6
     function(){
@@ -171,6 +181,8 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
     //7
     function(){
@@ -198,6 +210,8 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
     //8
     function(){
@@ -225,6 +239,8 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
     //9
     function(){
@@ -252,6 +268,8 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
     //10
     function(){
@@ -279,5 +297,7 @@ let popEvent = [
                 $('.status').removeClass("statusUp")
             }
         })
+        checkEnd()
+        console.log(moral,wealth,reputation)
     },
 ]

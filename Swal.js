@@ -30,9 +30,9 @@ $("#test").on('click',function () {
     popEvent[pick]();
     popEvent.splice(pick,1)
     count--
-    if(count==5){
+    if(count==0){
         $('#test').hide()
-        console.log(moral,wealth,reputation)
+        $('.card-text').text('你沒有大富大貴也沒有聲名遠播，就這樣勇者之途平凡的結束了，也許這也是一種不錯的結局吧...')
     }
 })
 

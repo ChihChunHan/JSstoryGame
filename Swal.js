@@ -5,9 +5,13 @@ function rand(number) {
 $(document).ready(function(){
     $('#statusBar').hide()
     $('#test').hide()
+    $('#restart').hide()
 })
 
-$("#click").on('click',function(){
+
+
+
+$("#start").on('click',function(){
     Swal.fire({
         title:"準備好了嗎",
         showCancelButton: true,
@@ -16,7 +20,7 @@ $("#click").on('click',function(){
     }).then((result) => {
         if(result.value) {
             $('#statusBar').show();
-            $('#click').hide()
+            $('#start').hide()
             $('#test').show()
         }
     })
@@ -30,10 +34,13 @@ $("#test").on('click',function () {
     popEvent[pick]();
     popEvent.splice(pick,1)
     count--
-    if(count==0){
+    if(count==1){
         $('#test').hide()
+        $('#restart').show()
         $('.card-text').text('你沒有大富大貴也沒有聲名遠播，就這樣勇者之途平凡的結束了，也許這也是一種不錯的結局吧...')
     }
 })
 
-
+$('#restart').on('click',function(){
+    window.location.reload()
+})
